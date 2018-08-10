@@ -6,7 +6,7 @@ void setup()
   background(120);
     
 }
-int l=500, b=500, i=0, r=30, j=5;
+int l=500, b=500, i=0, r=30, j=7;
   
 void draw()
 {
@@ -14,11 +14,8 @@ void draw()
    clear();
    ellipse(i,b/2,r,r);
    i=i+j;
-   if(i==0 || i==l)
-      j=-j;
-  
-  
-    
+   if(i<1 || i>l-1)
+      j=-j;    
 }
   
  
