@@ -11,6 +11,5 @@ void draw()
   x=R*cos(t);
   y=R*sin(t);
   ellipse(x,y,r,r);
-  t=t+PI/60;
-  
+  t=t+PI/60;  
 }
