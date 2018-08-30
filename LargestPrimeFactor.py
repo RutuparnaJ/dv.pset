@@ -1,13 +1,17 @@
 #largest prime factor
 i=0
 pfact=0
-for i in range(1,22):
-    if(22%i==0):
-        print ("i= ",i)
-        for fact in range(2,i+1):
+count=0
+for i in range(2,13195):
+    if(13195%i==0):   #finding factors 
+        #print ("i= ",i)
+        count=0
+        for fact in range(2,i): #checking whether factor is prime
             if(i%fact!=0):
-                pfact=fact
-                print ("pfact= ",pfact)
+                count=count+1
+            if(count==i-2):
+                pfact=i
+                print ("pfact= ", pfact)
 
-print (pfact) 
+print ("The largest prime number is: ",pfact) 
         
